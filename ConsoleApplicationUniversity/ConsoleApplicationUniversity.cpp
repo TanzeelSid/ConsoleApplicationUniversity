@@ -101,7 +101,7 @@ int main()
 
         // Distance Conversion
 
-    float km, meter, feet;
+    /*float km, meter, feet;
 
     printf("Enter distance in KM: ");
     scanf_s("%f", &km);
@@ -113,7 +113,7 @@ int main()
     printf("Distance in meters = %f m\n", meter);
     printf("Distance in feet = %.2f ft\n", feet);
 
-    return 0;
+    return 0;*/
 
 //**********************************************************************************************************************************************************************************************
 
@@ -149,6 +149,93 @@ int main()
     printf("Temperature in celsius is %f\n", celsius);
 
     return 0;*/
+
+//**********************************************************************************************************************************************************************************************
+
+        //Ask user for what he has eaten in snack time. If user types Fruit (‘F’) or Juice (‘J). Display it’s a healthy snack. Otherwise display it’s an unhealthy snack. 
+    /* char snack;
+
+    printf("What dis you eat for a snack? Type'F' for Fruits or 'J' for juice: ");
+    scanf_s(" %c", &snack);
+
+    if (snack == 'F' || snack == 'f') {
+        printf("It's a healthy snack.\n");
+    }
+    else if (snack == 'J' || snack == 'j') {
+        printf("It's a healthy snack.\n");
+    }
+    else
+    {
+        printf("It's an unhealthy sanck.\n");
+    }
+
+    return 0;*/
+
+//**********************************************************************************************************************************************************************************************
+
+        //Dozen Calculator
+    /*int oranges;
+
+    printf("Enter the number of oranges: ");
+    scanf_s("%d", &oranges);
+
+    if (oranges % 12 == 0)
+    {
+        int dozens = oranges / 12;
+        printf("%d oranges make %d dozens\n", oranges, dozens);
+    }
+    else
+    {
+        printf("Your required oranes can not be in dozens\n");
+    }
+
+    return 0;*/
+        
+//**********************************************************************************************************************************************************************************************
+
+        //year check
+    /*int year;
+    printf("Enter year: ");
+    scanf_s("%d", &year);
+
+    if (year % 4 == 0) {
+        printf("%d is a leap year\n", year);
+    }
+    else {
+        printf("Next leap year is in %d years\n", 4 - (year % 4));
+    }
+
+    return 0;*/
+
+//**********************************************************************************************************************************************************************************************
+
+        //Wind Intensity
+    int windspeed = 0;
+    printf("Enter wind speed: ");
+    scanf_s("%d", &windspeed);
+
+    if (windspeed>=72)
+    {
+        printf("hurricane\n");
+    }
+    else if(windspeed>=55)
+    {
+        printf("whole gale\n");
+    }
+    else if (windspeed >= 39)
+    {
+        printf("gale\n");
+    }
+    else if (windspeed >= 25)
+    {
+        printf("strong wind\n");
+    }
+    else
+    {
+        printf("Not a strong wind\n");
+    }
+
+    return 0;
 
 //**********************************************************************************************************************************************************************************************
 
