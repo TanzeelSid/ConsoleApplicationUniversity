@@ -210,7 +210,7 @@ int main()
 //**********************************************************************************************************************************************************************************************
 
         //Wind Intensity
-    int windspeed = 0;
+    /*int windspeed = 0;
     printf("Enter wind speed: ");
     scanf_s("%d", &windspeed);
 
@@ -235,8 +235,209 @@ int main()
         printf("Not a strong wind\n");
     }
 
-    return 0;
+    return 0;*/
 
 //**********************************************************************************************************************************************************************************************
+
+        //Vowels
+    /*char alphabet;
+
+    printf("Type any alphabet: ");
+    scanf_s(" %c", &alphabet);
+
+    if( alphabet == 'A' || alphabet == 'a' || alphabet == 'E' || alphabet == 'e' ||
+        alphabet == 'I' || alphabet == 'i' || alphabet == 'O' || alphabet == 'o' ||
+        alphabet == 'U' || alphabet == 'u')
+    {
+        printf("It's a vowel.\n");
+    }
+    else if (alphabet == 'W' || alphabet == 'w' || alphabet == 'Y' || alphabet == 'y')
+    {
+        printf("It's a semi vowel.\n");
+    }
+    else
+    {
+        printf("It's a constant\n");
+    }
+
+    return 0;*/
+
+//**********************************************************************************************************************************************************************************************
+
+        //temperature check
+    /*int celsius;
+
+    printf("Enter the temperature in Celsius: ");
+    scanf_s(" %d", &celsius);
+
+    if (celsius > 0) {
+        printf("Above Freezing.\n");
+    }
+    else if(celsius == 0)
+    {
+        printf("Freezig Point.\n");
+    }
+    else
+    {
+        printf("Below Freezing.\n");
+    }
+
+    return 0;*/
+
+//**********************************************************************************************************************************************************************************************
+
+        //calculator
+    /*float num1, num2, result;
+    int opt;
+    printf("Enter two numbers: ");
+    scanf_s("%f %f", &num1, &num2);
+    printf("Select any one option from 1 to 4\n");
+    scanf_s("%d", &opt);
+
+    switch(opt)
+    {
+        case 1:
+            result = num1 + num2;
+            printf("The Addition of two number is %.2f\n", result);
+            break;
+
+        case 2:
+            result = num1 - num2;
+            printf("The Subtraction of two number is %.2f\n", result);
+            break;
+
+        case 3:
+            result = num1 * num2;
+            printf("The Multiplication of two number is %.2f\n", result);
+            break;
+
+        case 4:
+            result = num1 / num2;
+            printf("The Division of two number is %.2f\n", result);
+            break;
+
+        default:
+            printf("Invalid");
+    }
+
+    return 0;*/
+
+//**********************************************************************************************************************************************************************************************
+
+        //Marksheet
+    /*int marks;
+    printf("Enter your marks: ");
+    scanf_s("%d", &marks);
+
+    switch (marks)
+    {
+        case 86:
+            printf("For your entered marks, your grade is A and your GPA is 4.00.\n");
+            break;
+
+        case 82:
+            printf("For your entered marks, your grade is A- and your gpa is 3.67.\n");
+            break;
+
+        case 78:
+            printf("For your entered marks, your grade is B+ and your GPA is 3.33.\n");
+            break;
+
+        case 74:
+            printf("For your entered marks, your grade is B and your GPA is 3.00.\n");
+            break;
+
+        case 70:
+            printf("For your entered marks, your grade is B- and your GPA is 2.67.\n");
+            break;
+
+        case 66:
+            printf("For your entered marks, your grade is C+ and your GPA is 2.33.\n");
+            break;
+
+        case 62:
+            printf("For your entered marks, your grade is C and your GPA is 2.00.\n");
+            break;
+        
+        case 58:
+            printf("For your entered marks, your grade is C- and your GPA is 1.67.\n");
+            break;
+        
+        case 54:
+            printf("For your entered marks, your grade is D+ and your GPA is 1.33.\n");
+            break;
+        
+        case 50:
+            printf("For your entered marks, your grade is D and your GPA is 1.00.\n");
+            break;
+        
+        default:
+            printf("Invalid marks entered.\n");
+    }
+
+    return 0;*/
+
+//**********************************************************************************************************************************************************************************************
+
+        //FoodMenu
+    char order;
+    int quantity;
+    int totalprice = 0;
+
+    printf("Type B if you want to order Burger (Rs.200 each).\n");
+    printf("Type F if you want to order French Fries (Rs.50 each).\n");
+    printf("Type P if you want to order Pizza (Rs.500 each).\n");
+    printf("Type S if you want to order Sandwiches (Rs.150 each).\n\n");
+
+    printf("Enter your order: ");
+    scanf_s(" %c", &order);
+
+    printf("Enter the quantity: ");
+    scanf_s("%d", &quantity);
+
+    switch (order)
+    {
+        case 'b':
+        case 'B':
+            totalprice = 200 * quantity;
+            printf("Your order is Burger. Total cost: Rs.%d\n",totalprice);
+            break;
+
+        case 'f':
+        case 'F':
+            totalprice = 50 * quantity;
+            printf("Your order is French Fries. Total cost: Rs.%d\n",totalprice);
+            break;
+
+        case 'p':
+        case 'P':
+            totalprice = 500 * quantity;
+            printf("Your order is Pizza. Total cost: Rs.%d\n",totalprice);
+            break;
+
+        case 's':
+        case 'S':
+            totalprice = 150 * quantity;
+            printf("Your order is Sandwiches. Total cost: Rs.%d\n",totalprice);
+            break;
+
+        default:
+            printf("Invalid Order.\n");
+    }
+
+    return 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
