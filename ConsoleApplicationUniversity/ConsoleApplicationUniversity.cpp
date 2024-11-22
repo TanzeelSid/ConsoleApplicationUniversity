@@ -380,64 +380,161 @@ int main()
 //**********************************************************************************************************************************************************************************************
 
         //FoodMenu
-    char order;
-    int quantity;
-    int totalprice = 0;
+    //char order;
+    //int quantity;
+    //int totalprice = 0;
 
-    printf("Type B if you want to order Burger (Rs.200 each).\n");
-    printf("Type F if you want to order French Fries (Rs.50 each).\n");
-    printf("Type P if you want to order Pizza (Rs.500 each).\n");
-    printf("Type S if you want to order Sandwiches (Rs.150 each).\n\n");
+    //printf("Type B if you want to order Burger (Rs.200 each).\n");
+    //printf("Type F if you want to order French Fries (Rs.50 each).\n");
+    //printf("Type P if you want to order Pizza (Rs.500 each).\n");
+    //printf("Type S if you want to order Sandwiches (Rs.150 each).\n\n");
 
-    printf("Enter your order: ");
-    scanf_s(" %c", &order);
+    //printf("Enter your order: ");
+    //scanf_s(" %c", &order);
 
-    printf("Enter the quantity: ");
-    scanf_s("%d", &quantity);
+    //printf("Enter the quantity: ");
+    //scanf_s("%d", &quantity);
 
-    switch (order)
+    //switch (order)
+    //{
+    //    case 'b':
+    //    case 'B':
+    //        totalprice = 200 * quantity;
+    //        printf("Your order is Burger. Total cost: Rs.%d\n",totalprice);
+    //        break;
+
+    //    case 'f':
+    //    case 'F':
+    //        totalprice = 50 * quantity;
+    //        printf("Your order is French Fries. Total cost: Rs.%d\n",totalprice);
+    //        break;
+
+    //    case 'p':
+    //    case 'P':
+    //        totalprice = 500 * quantity;
+    //        printf("Your order is Pizza. Total cost: Rs.%d\n",totalprice);
+    //        break;
+
+    //    case 's':
+    //    case 'S':
+    //        totalprice = 150 * quantity;
+    //        printf("Your order is Sandwiches. Total cost: Rs.%d\n",totalprice);
+    //        break;
+
+    //    default:
+    //        printf("Invalid Order.\n");
+    //}
+
+    //return 0;
+
+
+//**********************************************************************************************************************************************************************************************
+
+
+        /* int num;
+         printf("Enter the number: ");
+         scanf_s("%d", &num);
+         while(num!=0){
+             if (num  %2 == 0 ){
+                 printf("Number is even. \n");
+             }
+             else{
+                 printf("Number is odd. \n");
+             }
+             break;
+         }*/
+
+
+         /*int obtmarks = 0;
+         int counter = 0;
+         for (counter = 0; counter <10; counter ++){
+             printf("Enter Obtained Marks: ");
+             scanf_s("%d",&obtmarks);
+             if(obtmarks >= 50){
+                 printf("pass \n");
+             }
+             else{
+                 printf("fail \n");
+             }
+         }*/
+
+
+    /*int i = 0;
+    int  num = 0;
+    int power = 1;
+    printf("Enter the number: ");
+    scanf_s("%d", &num);
+
+    for (i = 0; i < num; i++) {
+        power = power * 2;
+    }
+    printf("2 to power %d is %d", num, power);*/
+
+
+   /* int num, i = 1;
+    printf("Enter the number for it's table: ");
+    scanf_s("%d", &num);
+    printf("Table of %d is:\n", num);
+    do
     {
-        case 'b':
-        case 'B':
-            totalprice = 200 * quantity;
-            printf("Your order is Burger. Total cost: Rs.%d\n",totalprice);
-            break;
+        printf("%d x %d = %d\n", num, i, num * i);
+        i++;
+    } while (i<=10);*/
 
-        case 'f':
-        case 'F':
-            totalprice = 50 * quantity;
-            printf("Your order is French Fries. Total cost: Rs.%d\n",totalprice);
-            break;
 
-        case 'p':
-        case 'P':
-            totalprice = 500 * quantity;
-            printf("Your order is Pizza. Total cost: Rs.%d\n",totalprice);
-            break;
+   // return 0;
 
-        case 's':
-        case 'S':
-            totalprice = 150 * quantity;
-            printf("Your order is Sandwiches. Total cost: Rs.%d\n",totalprice);
-            break;
 
-        default:
-            printf("Invalid Order.\n");
+//**********************************************************************************************************************************************************************************************
+
+        //sum up from loop
+    /*int num = 0, i;
+
+    for (i = 0; i <= 10; i++) {
+        printf("%d", i);
+
+        num += i;
     }
 
+    printf("\nTotal Sum:%d\n", num);
+
+    return 0;*/
+
+
+//**********************************************************************************************************************************************************************************************
+
+
+        //Checking Armstrong number
+    int num, number, remainder, result = 0;
+
+    printf("Enter a three-digit number: ");
+    scanf_s("%d", &num);
+
+    number = num;
+
+    while (num != 0) {
+        remainder = num % 10;
+
+        int power = 1;
+        for (int i = 0; i < 3; i++) {
+            power *= remainder;
+        }
+
+        result += power;
+        num /= 10;
+
+    }
+
+    if (result == number)
+    {
+        printf("%d is an Armstrong number.\n", number);
+    }
+    else {
+        printf("%d is not an Armstrong number.\n", number);
+    }
+
+
     return 0;
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
