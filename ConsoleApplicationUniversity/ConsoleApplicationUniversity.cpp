@@ -682,4 +682,6 @@ int main()
     printf("Deductions: Rs. %.2f \n", deductions);
     printf("Final Salary: Rs. %.2f \n", finalsalary);
 
+    return 0;
+
 }
