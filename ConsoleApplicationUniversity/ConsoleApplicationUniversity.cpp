@@ -1,6 +1,7 @@
 
 #include <stdio.h>
 #include <math.h>
+#include<stdbool.h>
 
 int main()
 {
@@ -505,7 +506,7 @@ int main()
 
 
         //Checking Armstrong number
-    int num, number, remainder, result = 0;
+    /*int num, number, remainder, result = 0;
 
     printf("Enter a three-digit number: ");
     scanf_s("%d", &num);
@@ -534,7 +535,151 @@ int main()
     }
 
 
-    return 0;
+    return 0;*/
 
+//**********************************************************************************************************************************************************************************************
+
+        //TAX CALCULATOR
+    /*int income, tax, netincome, taxrate;
+
+    printf("Enter your annual income: ");
+    scanf_s("%d", &income);
+
+    if (income>700000)
+    {
+        tax = income * 20 / 100;
+        netincome = income - tax;
+        taxrate = 20;
+
+    }
+    else if (income>300000)
+    {
+        tax = income * 10 / 100;
+        netincome = income - tax;
+        taxrate = 10;
+
+    }
+    else {
+        tax =0;
+        netincome = income - tax;
+        taxrate = 0;
+
+    }
+
+    printf("Income: %d\n", income);
+    printf("Tax Rate: %d \n", taxrate);
+    printf("Tax amount: %d\n", tax);
+    printf("Net income: %d\n", netincome);
+
+    return 0;*/
+
+//**********************************************************************************************************************************************************************************************
+
+        //ELECTRICITY BILL CALCULATOR
+    //int units;
+    //float bill = 0, discount = 0, finalBill = 0;
+
+    //printf("Enter the number of units consumed: ");
+    //scanf("%d", &units);
+
+
+    //if (units <= 100) {
+    //    bill = units * 5;
+    //}
+    //else if (units <= 300) {
+    //    bill = (100 * 5) + ((units - 100) * 7);
+    //}
+    //else {
+    //    bill = (100 * 5) + (200 * 7) + ((units - 300) * 10);
+    //}
+
+    //bill += 50;
+
+    //if (bill > 1000) {
+    //    discount = bill * 0.10;
+    //}
+
+    //finalBill = bill - discount;
+
+    //printf("\nElectricity Bill Summary:\n");
+    //printf("Total units consumed: %d\n", units);
+    //printf("Total bill before discount: Rs. %.2f\n", bill);
+    //printf("Discount amount: Rs. %.2f\n", discount);
+    //printf("Final bill amount: Rs. %.2f\n", finalBill);
+
+    //return 0;
+
+//**********************************************************************************************************************************************************************************************
+
+        //RESTURANT BILL WITH DISCOUNT
+    /* float bill = 0, finalbill = 0, discount = 0, finalamount = 0, servicecharge = 0, totaldiscount = 0;
+    char loyalty;
+
+    printf("Enter your Bill: ");
+    scanf_s("%f", &bill);
+
+    printf("Are a loyalty program member (y/n): ");
+    scanf_s(" %c", &loyalty,1);
+
+    if (bill>1000)
+    {
+        discount = bill * 20 / 100;
+    }
+    else if (bill>500)
+    {
+        discount = bill * 15 / 100;
+    }
+
+    finalbill = bill - discount;
+    totaldiscount = discount;
+
+    if (loyalty == 'y' || loyalty=='Y')
+    {
+        float loyaltydiscount = finalbill * 10 / 100;
+        finalbill -= loyaltydiscount;
+        totaldiscount += loyaltydiscount;
+    }
+
+    servicecharge = finalbill * 10 / 100;
+    finalamount = finalbill + servicecharge;
+
+    printf("Payment Summary: \n");
+    printf("Original Bill Amount: Rs. %.2f \n", bill);
+    printf("Total discount Applied: Rs. %.2f \n", totaldiscount);
+    printf("Service Charges: Rs. %.2f \n", servicecharge);
+    printf("Final Amount : Rs. %.2f \n", finalamount);
+
+
+    return 0;*/
+
+//**********************************************************************************************************************************************************************************************
+
+        //Salary Calculator
+    float basicsalry = 0, hra = 0, med = 0, totalallowance = 0, loyalty = 0, deductions = 0, finalsalary = 0;
+    int yearofservice = 0;
+
+    printf("Enter the basic salary of the employee: ");
+    scanf_s("%f", &basicsalry);
+
+    printf("Enter the years of service of the employee: ");
+    scanf_s("%d", &yearofservice);
+
+    hra = basicsalry * 20 / 100;
+    med = basicsalry * 10 / 100;
+    totalallowance = hra + med;
+
+    if (yearofservice>=10)
+    {
+        loyalty = 5000;
+    }
+
+    finalsalary = basicsalry + totalallowance + loyalty - deductions;
+
+    printf("Salary Breakdown: \n");
+    printf("Basic Salary: Rs. %.2f \n", basicsalry);
+    printf("Total Allowance: Rs. %.2f \n", totalallowance);
+    printf("Loyalty Bonus: Rs. %.2f \n", loyalty);
+    printf("Deductions: Rs. %.2f \n", deductions);
+    printf("Final Salary: Rs. %.2f \n", finalsalary);
 
 }
