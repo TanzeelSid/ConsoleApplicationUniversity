@@ -655,7 +655,7 @@ int main()
 //**********************************************************************************************************************************************************************************************
 
         //Salary Calculator
-    float basicsalry = 0, hra = 0, med = 0, totalallowance = 0, loyalty = 0, deductions = 0, finalsalary = 0;
+    /*float basicsalry = 0, hra = 0, med = 0, totalallowance = 0, loyalty = 0, deductions = 0, finalsalary = 0;
     int yearofservice = 0;
 
     printf("Enter the basic salary of the employee: ");
@@ -681,6 +681,91 @@ int main()
     printf("Loyalty Bonus: Rs. %.2f \n", loyalty);
     printf("Deductions: Rs. %.2f \n", deductions);
     printf("Final Salary: Rs. %.2f \n", finalsalary);
+
+    return 0;*/
+
+//**********************************************************************************************************************************************************************************************
+
+        //SUM OF EVEN NUMBERS
+    //int n, i, sum = 0;
+
+    //printf("Enter the number for sum of first natural even numbers: ");
+    //scanf_s("%d", &n);
+
+    //for (i = 0; i <= n; i++) {
+    //    sum += 2 * i;
+    //}
+    //printf("The sum of %d even numbers are: %d", n, sum);
+
+    //return 0;
+
+//**********************************************************************************************************************************************************************************************
+
+        //SUM OF ODD NUMBERS
+    /*int n, i, sum = 0;
+
+    printf("Enter the number for sum of first natural odd numbers: ");
+    scanf_s("%d", &n);
+
+    for (i = 1; i <= n; i++) {
+        sum += 2 * i - 1;
+    }
+    printf("The sum of %d odd numbers are: %d \n", n, sum);
+
+    return 0;*/
+
+//**********************************************************************************************************************************************************************************************
+
+        //SUM OF NATURAL NUMBERS
+    /*int n, i, sum = 0;
+
+    printf("Enter the number for sum of first natural numbers: ");
+    scanf_s("%d", &n);
+
+    for (i = 0; i <= n; i++) {
+        sum += i;
+    }
+    printf("The sum of %d first natural numbers are: %d \n", n, sum);
+
+    return 0;*/
+
+//**********************************************************************************************************************************************************************************************
+
+            //SUM OF SQUARES
+        /*int n, i, sum = 0;
+
+        printf("Enter the number for sum of first natural square numbers: ");
+        scanf_s("%d", &n);
+
+        for (i = 0; i <= n; i++) {
+            sum += i*i;
+        }
+        printf("The sum of %d first natural square numbers are: %d \n", n, sum);
+
+        return 0;*/
+
+//**********************************************************************************************************************************************************************************************
+
+        //CHECK PERFECT NUMBER
+    int n, i, sum = 0;
+
+    printf("Enter the number: ");
+    scanf_s("%d", &n);
+
+    for ( i = 1; i < n; i++)
+    {
+        if (n % i == 0) {
+            sum += i;
+        }
+    }
+
+    if (sum == n)
+    {
+        printf(" %d is a perfect number \n", n);
+    }
+    else {
+        printf(" %d is not a perfect number \n", n);
+    }
 
     return 0;
 
