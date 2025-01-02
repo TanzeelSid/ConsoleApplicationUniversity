@@ -747,7 +747,7 @@ int main()
 //**********************************************************************************************************************************************************************************************
 
         //CHECK PERFECT NUMBER
-    int n, i, sum = 0;
+    /*int n, i, sum = 0;
 
     printf("Enter the number: ");
     scanf_s("%d", &n);
@@ -767,6 +767,354 @@ int main()
         printf(" %d is not a perfect number \n", n);
     }
 
-    return 0;
+    return 0;*/
 
-}
+//**********************************************************************************************************************************************************************************************
+
+//example 1
+    /*int i = 1, j;
+    while (i <= 5) {
+        j = 1;
+        while (j <= i) {
+            printf("%d", j);
+            j++;
+        }
+        printf("\n");
+        i++;
+    }*/
+
+
+
+    //TASK 1
+/*int i = 1, j;
+while (i <= 5) {
+    j = 1;
+    while (j <= i) {
+        printf("*");
+        j++;
+    }
+    printf("\n");
+    i++;
+}*/
+//example 2
+/*int i = 1, j;
+do {
+    j = 1;
+    do {
+        printf("*");
+        j++;
+    } while (j <= i);
+    i++;
+    printf("\n");
+} while (i <= 5);*/
+
+
+//TASK 2
+/*int i = 1, j;
+do {
+    j = 1;
+    do {
+        printf("%d",j);
+        j++;
+    } while (j <= i);
+    i++;
+    printf("\n");
+} while (i <= 5);*/
+
+
+//example 3
+/*int i = 0, j = 0, num = 0;
+printf("Enter a number");
+scanf_s("%d", &num);
+for ( i = 0; i < num; i++)
+{
+    for (j = 0;j < i;j++) {
+        printf("*");
+    }
+    printf("\n");
+}*/
+
+
+//TASK 3
+//int i = 5, j;
+//for ( i = 5; i >=1 ; i--)
+//{
+//	for (j = 1;j <= i;j++) {
+//		printf("%d", j);
+//	}
+//	printf("\n");
+//}
+
+
+
+    //TASK 4
+/*int i, j;
+for ( i = 1; i <=5 ; i++)
+{
+    for (j = 5;j >= 6 - i;j--) {
+        printf("%d", j);
+    }
+    printf("\n");
+}*/
+
+//return 0;
+
+//**********************************************************************************************************************************************************************************************
+
+//int i = 1, j, num;
+//printf("Enter a Number: ");
+//scanf_s("%d", &num);
+//
+//do {
+//    j = 1;
+//    do {
+//        printf("%d",i);
+//        j++;
+//    } while (j <= i);
+//    i++;
+//    printf("\n");
+//} while (i <= num);
+//
+//return 0;
+
+//**********************************************************************************************************************************************************************************************
+
+    /*int i, j;
+
+    for ( i = 1; i <= 4; i++)
+    {
+        for (j = 1;j <= 4;j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    return 0;*/
+
+//**********************************************************************************************************************************************************************************************
+
+	//Grade Calculator
+    /*int ans1, ans2, i, j;
+	float marks, totalmarks, average, overallaverage=0;
+
+	printf("Enter the number of students: ");
+	scanf_s("%d", &ans1);
+
+	for (i = 1; i <= ans1; i++)
+	{
+		printf("\nStudent %d\n", i);
+		printf("Enter the number of subjects: ");
+		scanf_s("%d", &ans2);
+
+		totalmarks = 0;
+
+		for (j = 1; j <= ans2; j++)
+		{
+			printf("Enter the marks of subject %d: ", j);
+			scanf_s("%f", &marks); 
+			totalmarks += marks; 
+		}
+
+		average = totalmarks / ans2;
+		overallaverage += average; 
+
+		printf("The total marks of student %d is %.2f\n", i, totalmarks);
+		printf("The average marks of student %d is %.2f\n", i, average);
+	}
+
+	overallaverage = overallaverage / ans1;
+	printf("\nThe overall average of all students is %.2f\n", overallaverage);
+
+    return 0;*/
+
+//**********************************************************************************************************************************************************************************************
+
+    //total votes calculator
+    /*int cities, candidates, i, j, votes, cityvotes, totalvotes = 0;
+
+	printf("Enter the number of cities: ");
+	scanf_s("%d", &cities);
+
+	for (i = 1; i <= cities; i++)
+	{
+		printf("\nCity %d\n", i);
+		printf("Enter the number of candidates: ");
+		scanf_s("%d", &candidates);
+
+		cityvotes = 0;
+
+		for (j = 1; j <= candidates; j++)
+		{
+			printf("Enter the votes of candidate %d: ", j);
+			scanf_s("%d", &votes);
+			cityvotes += votes;
+		}
+
+		totalvotes += cityvotes;
+		printf("The total votes of city %d is %d\n", i, cityvotes);
+	}
+
+	printf("\nThe total votes of all cities is %d\n", totalvotes);
+
+	return 0;*/
+
+//**********************************************************************************************************************************************************************************************
+
+            //Assignment 1
+
+// Question 1: Fibonacci Series
+    /*int n, t1 = 0, t2 = 1, nextTerm;
+    printf("Enter the number of terms: ");
+    scanf_s("%d", &n);
+
+    printf("Fibonacci Series: ");
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", t1);
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+    }
+    printf("\n");
+    return 0;*/
+
+
+// Question 2: Count Positive, Negative, and Zeros
+    /*int num, positive = 0, negative = 0, zero = 0;
+    char choice;
+
+    do {
+        printf("Enter a number: ");
+        scanf_s("%d", &num);
+
+        if (num > 0)
+            positive++;
+        else if (num < 0)
+            negative++;
+        else
+            zero++;
+
+        printf("Do you want to continue (y/n)? ");
+        scanf_s(" %c", &choice);
+    } while (choice == 'y' || choice == 'Y');
+
+    printf("Positive: %d, Negative: %d, Zeros: %d\n", positive, negative, zero);
+    return 0;*/
+
+
+// Question 3: Sum Two Numbers with Do-While Loop
+    /*int num1, num2, sum;
+    char choice;
+
+    do {
+        printf("Enter two numbers: ");
+        scanf_s("%d %d", &num1, &num2);
+        sum = num1 + num2;
+        printf("The sum is: %d\n", sum);
+
+        printf("Do you want to perform the operation again (y/n)? ");
+        scanf_s(" %c", &choice);
+    } while (choice == 'y' || choice == 'Y');
+    return 0;*/
+
+// Question 4: Reverse Digits of an Integer
+    /*int num, reversed = 0;
+    printf("Enter an integer: ");
+    scanf_s("%d", &num);
+
+    while (num != 0) {
+        reversed = reversed * 10 + num % 10;
+        num /= 10;
+    }
+
+    printf("Reversed Number: %d\n", reversed);
+    return 0;*/
+
+// Question 5: Factorial of a Number
+
+        /*int n;
+        int fact = 1;
+
+        printf("Enter a number: ");
+        scanf_s("%d", &n);
+
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+
+        printf("Factorial: %d\n", fact);
+        return 0;*/
+
+// Question 6: Sum of Digits
+    /*int num, sum = 0;
+    printf("Enter a number: ");
+    scanf_s("%d", &num);
+
+    while (num != 0) {
+        sum += num % 10;
+        num /= 10;
+    }
+
+    printf("Sum of digits: %d\n", sum);
+    return 0;*/
+
+// Question 7: Sum of Series
+    /*int n;
+    float sum = 0.0f;
+    printf("Enter the value of n: ");
+    scanf_s("%d", &n);
+
+    for (int i = 1; i <= n; i++) {
+        float term = 1.0f / (i * i);
+        printf("1/%d^%d = %.6f\n", i, i, term);
+        sum += term;
+    }
+
+    printf("Sum of the series: %.6f\n", sum);
+    return 0;*/
+
+
+// Question 8: Cube of Numbers
+    /*int n;
+    printf("Enter the number of terms: ");
+    scanf_s("%d", &n);
+
+    for (int i = 1; i <= n; i++) {
+        printf("Number is: %d and the cube of %d is: %d\n", i, i, i * i * i);
+    }
+    return 0;*/
+
+//**********************************************************************************************************************************************************************************************
+
+	//Problem 1: Delivery Charges
+//int amt, del;
+//printf("Enter user's purchase Amount: ");
+//scanf_s("%d", &amt);
+//if (amt > 1000) {
+//    del = amt;
+//}
+//else {
+//    del = amt + 150;
+//}
+//printf("\n===========================\n");
+//printf("Delivery charges: %d Rs\n", del);
+//printf("===========================\n");
+//return 0;
+
+//**********************************************************************************************************************************************************************************************
+
+	    //Problem 2: Least Significant and Most Significant Digit
+	int num, msd, lsd;
+    printf("===========================\n");
+	printf("\nEnter a number: "); 
+	scanf_s("%d", &num); 
+	lsd = num % 10; 
+	while (num >= 10) {
+		num /= 10; 
+	}
+	msd = num; 
+    printf("LSD is %d and MSD is %d\n", lsd, msd);
+	printf("\n===========================\n");
+	return 0;
+
+
+ }//end of main
