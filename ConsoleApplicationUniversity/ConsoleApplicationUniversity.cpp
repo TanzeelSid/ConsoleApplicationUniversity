@@ -3,8 +3,8 @@
 #include <math.h>
 #include<stdbool.h>
 
-int main()
-{
+//int main()
+//{
 
 //**********************************************************************************************************************************************************************************************
 
@@ -1103,7 +1103,7 @@ for ( i = 1; i <=5 ; i++)
 //**********************************************************************************************************************************************************************************************
 
 	    //Problem 2: Least Significant and Most Significant Digit
-	int num, msd, lsd;
+	/*int num, msd, lsd;
     printf("===========================\n");
 	printf("\nEnter a number: "); 
 	scanf_s("%d", &num); 
@@ -1114,7 +1114,170 @@ for ( i = 1; i <=5 ; i++)
 	msd = num; 
     printf("LSD is %d and MSD is %d\n", lsd, msd);
 	printf("\n===========================\n");
-	return 0;
+	return 0;*/
 
 
- }//end of main
+ //}//end of main
+
+ //**********************************************************************************************************************************************************************************************
+
+        //Arrays
+    //example 1
+ /*int main()
+ {
+     int marks[5] = {89,65,87,80,70};
+	 printf("Marks of subject 1: %d\n", marks[0]);
+	 printf("Marks of subject 2: %d\n", marks[1]);
+	 printf("Marks of subject 3: %d\n", marks[2]);
+	 printf("Marks of subject 4: %d\n", marks[3]);
+	 printf("Marks of subject 5: %d\n", marks[4]);
+	 return 0;
+
+ }*/
+
+    //task 01
+ /*int main() {
+	 int temp[7] = { 25, 27, 30, 32, 35, 36, 38 };
+	 printf("Temperature of Monday: %d\n", temp[0]);
+	 printf("Temperature of Tuesday: %d\n", temp[1]);
+	 printf("Temperature of Wednesday: %d\n", temp[2]);
+	 printf("Temperature of Thursday: %d\n", temp[3]);
+	 printf("Temperature of Friday: %d\n", temp[4]);
+	 printf("Temperature of Saturday: %d\n", temp[5]);
+	 printf("Temperature of Sunday: %d\n", temp[6]);
+	 return 0;
+ }*/
+
+    //example 02
+ /*int main() {
+	 int marks[10], i, n, sum=0, average;
+	 printf("Enter the number: ");
+	 scanf_s("%d", &n);
+     for ( i = 0; i < n; ++i)
+     {
+         printf("Enter marks: ", i + 1);
+		 scanf_s("%d", &marks[i]);
+		 sum += marks[i];
+     }
+	 average = sum / n;
+	 printf("Average marks: %d\n", average);
+	 return 0;
+ }*/
+
+    //example 02
+ /*int main() {
+     int array[5];
+     int square[5];
+     int i = 0;
+     for ( i = 0; i < 5; i++)
+     {
+         printf("Enter the value for array: ");
+		 scanf_s("%d", &array[i]);
+     }
+	 for (i = 0; i < 5; i++)
+	 {
+		 square[i] = array[i] * array[i];
+		 printf("Square of %d is %d\n", array[i], square[i]);
+	 }
+	 return 0;
+ }*/
+
+    //task 02
+ /*int main() {
+     int n, i;
+     float arr[100], sum = 0.0, avg;
+     printf("Enter the number of elements: ");
+     scanf_s("%d", &n);
+     for (i = 0; i < n; ++i) {
+         printf("%d. Enter number: ", i + 1);
+         scanf_s("%f", &arr[i]);
+         sum += arr[i];
+     }
+     avg = sum / n;
+     printf("Average = %.2f", avg);
+     return 0;
+ }*/
+
+    //example 03
+ /*int main() {
+     int array[10];
+     int i = 0;
+	 for (i = 0; i < 10; i++)
+	 {
+		 printf("Enter the value for array: ");
+		 scanf_s("%d", &array[i]);
+	 }
+     for ( i = 0; i < 10; i++)
+     {
+         if (array[i] % 2 == 0) {
+			 printf("%d is even\n", array[i]);
+		 }
+		 else {
+			 printf("%d is odd\n", array[i]);
+         }
+     }
+	 return 0;
+ }*/
+
+    //task 03
+ /*int main() {
+     int array[10], i, max;
+     printf("Enter 10 elements:\n");
+     for (i = 0; i < 10; i++) {
+         scanf_s("%d", &array[i]);
+     }
+     max = array[0];
+     for (i = 1; i < 10; i++) {
+         if (array[i] > max) {
+             max = array[i];
+         }
+     }
+     printf("Maximum element: %d\n", max);
+     return 0;
+ }*/
+
+    //example 04
+ /*float getAverage(int array[], int arraySize);
+ int main() {
+	 int marks[5] = { 0, 0, 0, 0, 0 };
+     int i = 0;
+     float average = 0.0;
+	 for (i = 0; i < 5; i++)
+	 {
+		 scanf_s("%d", &marks[i]);
+	 }
+	 average = getAverage(marks, 5);
+	 printf("Average marks: %.2f\n", average);
+	 return 0;
+ }
+ float getAverage(int array[], int arraySize) {
+	 int sum = 0;
+	 float average = 0.0;
+	 for (int i = 0; i < arraySize; i++) {
+		 sum += array[i];
+	 }
+	 average = sum / arraySize;
+	 return average;
+ }*/
+
+    //task 04
+ float calculate_average(float temps[], int size) {
+     float sum = 0.0;
+	 float average = 0.0;
+     for (int i = 0; i < size; i++) {
+         sum += temps[i];
+     }
+     average = sum / size;
+	 return average;
+ }
+ int main() {
+     float temperatures[7];
+     printf("Enter temperatures for each day of the week:\n");
+     for (int i = 0; i < 7; i++) {
+         printf("Day %d: ", i + 1);
+         scanf_s("%f", &temperatures[i]);
+     }
+     float average_temp = calculate_average(temperatures, 7);
+     printf("Average temperature of the week: %.2f\n", average_temp);
+     return 0;
+ }
