@@ -1119,7 +1119,7 @@ for ( i = 1; i <=5 ; i++)
 
  //}//end of main
 
- //**********************************************************************************************************************************************************************************************
+//**********************************************************************************************************************************************************************************************
 
         //Arrays
     //example 1
@@ -1261,7 +1261,7 @@ for ( i = 1; i <=5 ; i++)
  }*/
 
     //task 04
- float calculate_average(float temps[], int size) {
+ /*float calculate_average(float temps[], int size) {
      float sum = 0.0;
 	 float average = 0.0;
      for (int i = 0; i < size; i++) {
@@ -1280,4 +1280,210 @@ for ( i = 1; i <=5 ; i++)
      float average_temp = calculate_average(temperatures, 7);
      printf("Average temperature of the week: %.2f\n", average_temp);
      return 0;
- }
+ }*/
+
+//**********************************************************************************************************************************************************************************************
+
+        //Assignment 2
+    
+    //Question 1
+//int main() {
+//    for (int i = 0; i < 5; i++)
+//    {
+//        for (int j = 0; j < 5; j++) {
+//            int n;
+//            n = i - j;
+//            if (n<0)
+//            {
+//                n = -1 * n;
+//            }
+//            printf("%d ",n);
+//        }
+//        printf("\n");
+//    }
+//    return 0;
+//}
+
+    //Question 2
+//int main() {
+//    int N;
+//    printf("For N = ");
+//    scanf_s("%d", &N);
+//    for (int i = 0; i < N; i++) {
+//        int num = i, binary[32], index = 0;
+//        if (num == 0) {
+//            printf("0");
+//        }
+//        else {
+//            while (num > 0) {
+//                binary[index++] = num % 2;
+//                num = num / 2;
+//            }
+//            for (int j = index - 1; j >= 0; j--) {
+//                printf("%d", binary[j]);
+//            }
+//        }
+//        if (i < N - 1) {
+//            printf(",");
+//        }
+//    }
+//    printf("\n");
+//    return 0;
+//}
+
+	//Question 3
+//int main() {
+//    int n;
+//    int persistence = 0;
+//    printf("Enter a positive integer: ");
+//    scanf_s("%d", &n);
+//    if (n <= 0) {
+//        printf("Please enter a positive integer.\n");
+//        return 1;
+//    }
+//    printf("Sequence: %d", n);
+//    while (n >= 10) {
+//        int product = 1;
+//        int temp = n;
+//        while (temp > 0) {
+//            product = product * (temp % 10);  
+//            temp = temp / 10;
+//        }
+//        n = product;
+//        persistence++;
+//        printf(" , %d", n);
+//    }
+//    printf("\nMultiplicative persistence: %d\n", persistence);
+//    printf("Multiplicative digital root: %d\n", n);
+//    return 0;
+//}
+
+	//Question 4
+//int main() {
+//    int n;
+//    printf("Enter a positive integer: ");
+//    scanf_s("%d", &n);
+//    for (int i = 1; i <= n; i++) {
+//        for (int j = i; j < n; j++) {
+//            printf("  ");
+//        }
+//        for (int k = 1; k <= (2 * i - 1); k++) {
+//            if (k == 1 || k == (2 * i - 1) || i == n) {
+//                printf("* ");
+//            }
+//            else {
+//                printf("  ");
+//            }
+//        }
+//        printf("\n");
+//    }
+//    return 0;
+//}
+
+	//Question 5
+//int main() {
+//    int n;
+//    printf("For N = ");
+//    scanf_s("%d", &n);
+//    for (int i = 1; i <= n; i++) {
+//        for (int j = 1; j <= i; j++) {
+//            printf("*");
+//        }
+//        printf("\n");
+//    }
+//    for (int i = n - 1; i >= 1; i--) {
+//        for (int j = 1; j <= i; j++) {
+//            printf("*");
+//        }
+//        printf("\n");
+//    }
+//    return 0;
+//}
+
+	//Question 6
+//int main() {
+//    for (int i = 1; i <= 4; i++) {
+//        for (int j = 1; j <= 12; j++) {
+//            if (i == 1 || i == 4 || j == 1 || j == 12) {
+//                printf("*");
+//            }
+//            else {
+//                printf(" ");
+//            }
+//        }
+//        printf("\n");
+//    }
+//    return 0;
+//}
+
+	//Question 7
+//int main() {
+//    int n, stars = 1;
+//    printf("Rows = ");
+//    scanf_s("%d", &n);
+//    for (int i = 1; i <= n; i++) {
+//        for (int j = 1; j <= stars; j++) {
+//            printf("*");
+//        }
+//        printf("\n");
+//        stars = stars * 2;
+//    }
+//    return 0;
+//}
+
+    //Question 8
+//int main() {
+//    for (int i = 1; i <= 5; i++) {
+//        for (int j = 1; j <= 5 - i; j++) {
+//            printf("  ");
+//        }
+//        for (int j = 1; j <= 2 * i - 1; j++) {
+//            if (j == 1 || j == 2 * i - 1) {
+//                printf("* ");
+//            }
+//            else {
+//                printf("  ");
+//            }
+//        }
+//        printf("\n");
+//    }
+//    for (int i = 5 - 1; i >= 1; i--) {
+//        for (int j = 1; j <= 5 - i; j++) {
+//            printf("  ");
+//        }
+//        for (int j = 1; j <= 2 * i - 1; j++) {
+//            if (j == 1 || j == 2 * i - 1) {
+//                printf("* ");
+//            }
+//            else {
+//                printf("  ");
+//            }
+//        }
+//        printf("\n");
+//    }
+//    return 0;
+//}
+
+	//Question 9
+//int main() {
+//    for (int i = 1; i <= 5; i++) {
+//        for (int j = 1; j <= 5 - i; j++) {
+//            printf(" ");
+//        }
+//        for (int j = 1; j <= 2 * i - 1; j++) {
+//            printf("*");
+//        }
+//        printf("\n");
+//    }
+//   for (int i = 5 - 1; i >= 1; i--) {
+//        for (int j = 1; j <= 5 - i; j++) {
+//            printf(" ");
+//        }
+//        for (int j = 1; j <= 2 * i - 1; j++) {
+//            printf("*");
+//        }
+//        printf("\n");
+//    }
+//    return 0;
+//}
+
