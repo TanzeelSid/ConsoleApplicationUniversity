@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <math.h>
 #include<stdbool.h>
+#include<stdlib.h>
 
 //int main()
 //{
@@ -1487,3 +1488,69 @@ for ( i = 1; i <=5 ; i++)
 //    return 0;
 //}
 
+//**********************************************************************************************************************************************************************************************
+
+        //lab 11 work
+	//example 1
+int main() {
+    int  var = 20;   /* actual variable declaration */
+    int* ip;        /* pointer variable declaration */
+    ip = &var;  /* store address of var in pointer variable*/
+    printf("Address of var variable: %x\n", &var);
+    /* address stored in pointer variable */
+    printf("Address stored in ip variable: %x\n", ip);
+    /* access the value using the pointer */
+    printf("Value of *ip variable: %d\n", *ip);
+    return 0;
+}
+
+    //example 2
+//int main()
+//{
+//    FILE* fptr;
+//    errno_t err = fopen_s(&fptr, "NewFile.txt", "w");
+//    if (err == 0) {
+//        printf("File opened\n");
+//        fclose(fptr);
+//    } else {
+//        printf("Failed to open file\n");
+//    }
+//    return 0;
+//}
+
+    //example 3
+//int main()
+//{
+//    int num;
+//    FILE* fptr;
+//    errno_t err = fopen_s(&fptr, "NewFile.txt", "w");
+//    if (err != 0)
+//    {
+//        printf("Error!");
+//        exit(1);
+//    }
+//    printf("Enter num: ");
+//    scanf_s("%d", &num);
+//    fprintf(fptr, "%d", num);
+//    fclose(fptr);
+//    return 0;
+//}
+
+    //example 4
+//int main()
+//{
+//    FILE* fptr;
+//    char ch;
+//    errno_t err = fopen_s(&fptr, "MyFile.txt", "r");
+//    if (err != 0)
+//    {
+//        printf("Error: Cannot open the file\n");
+//        return 1;
+//    }
+//    while ((ch = getc(fptr)) != EOF)
+//    {
+//        printf("%c", ch);
+//    }
+//    fclose(fptr);
+//    return 0;
+//}
